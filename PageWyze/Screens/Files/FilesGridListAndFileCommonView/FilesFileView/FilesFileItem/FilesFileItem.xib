@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FilesFileItem" customModule="WebSites" customModuleProvider="target">
+            <connections>
+                <outlet property="cellBackGroundView" destination="jwp-nT-cRB" id="CWe-st-DcD"/>
+                <outlet property="fileNameLabel" destination="MzS-hG-wxg" id="0u7-i3-Np9"/>
+                <outlet property="fileProfileImageView" destination="WqE-nO-vZ9" id="iUQ-rf-p5I"/>
+                <outlet property="fileSizeLabel" destination="ppw-Ys-9VP" id="ShQ-qz-yBy"/>
+                <outlet property="fileStatusImageView" destination="5Ha-mi-JPX" id="G3y-vS-H1P"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="179" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="jwp-nT-cRB">
+                    <rect key="frame" x="5" y="5" width="169" height="190"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WqE-nO-vZ9">
+                            <rect key="frame" x="47" y="105" width="75" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="WqE-nO-vZ9" secondAttribute="height" multiplier="1:1" id="5Rs-Cd-d8L"/>
+                                <constraint firstAttribute="width" constant="75" id="VND-n8-415"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Image_06" id="j3h-sW-O8f"/>
+                        </imageView>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Ha-mi-JPX">
+                            <rect key="frame" x="110" y="168" width="12" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="5Ha-mi-JPX" secondAttribute="height" multiplier="1:1" id="Cwf-oT-PjX"/>
+                                <constraint firstAttribute="width" constant="12" id="YIX-xw-pkx"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Green_Dot" id="gTi-Zu-pv9"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MzS-hG-wxg">
+                            <rect key="frame" x="8" y="79" width="153" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="o4l-Xn-QvN">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ppw-Ys-9VP">
+                            <rect key="frame" x="8" y="10" width="153" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="CcJ-CX-Wql">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ppw-Ys-9VP" secondAttribute="bottom" constant="10" id="0pU-RG-vkG"/>
+                        <constraint firstItem="ppw-Ys-9VP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="MzS-hG-wxg" secondAttribute="bottom" constant="10" id="5UH-1D-aul"/>
+                        <constraint firstItem="MzS-hG-wxg" firstAttribute="leading" secondItem="jwp-nT-cRB" secondAttribute="leading" constant="10" id="7rG-S8-wro"/>
+                        <constraint firstItem="5Ha-mi-JPX" firstAttribute="top" secondItem="WqE-nO-vZ9" secondAttribute="top" id="Aw5-V2-YiG"/>
+                        <constraint firstItem="WqE-nO-vZ9" firstAttribute="top" secondItem="jwp-nT-cRB" secondAttribute="top" constant="10" id="Cee-9I-U0o"/>
+                        <constraint firstItem="ppw-Ys-9VP" firstAttribute="trailing" secondItem="MzS-hG-wxg" secondAttribute="trailing" id="ZKk-b3-LSA"/>
+                        <constraint firstAttribute="trailing" secondItem="MzS-hG-wxg" secondAttribute="trailing" constant="10" id="ZP1-Eq-VxF"/>
+                        <constraint firstItem="MzS-hG-wxg" firstAttribute="top" secondItem="WqE-nO-vZ9" secondAttribute="bottom" constant="10" id="aEs-yM-TUO"/>
+                        <constraint firstItem="ppw-Ys-9VP" firstAttribute="leading" secondItem="MzS-hG-wxg" secondAttribute="leading" id="i0f-hm-8tm"/>
+                        <constraint firstItem="5Ha-mi-JPX" firstAttribute="trailing" secondItem="WqE-nO-vZ9" secondAttribute="trailing" id="mBf-Sc-bs4"/>
+                        <constraint firstItem="WqE-nO-vZ9" firstAttribute="centerX" secondItem="jwp-nT-cRB" secondAttribute="centerX" id="q5R-Sn-6YN"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jwp-nT-cRB" secondAttribute="bottom" constant="5" id="L1w-Xc-SPb"/>
+                <constraint firstAttribute="trailing" secondItem="jwp-nT-cRB" secondAttribute="trailing" constant="5" id="OUb-jz-VdL"/>
+                <constraint firstItem="jwp-nT-cRB" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="5" id="feW-vH-vPC"/>
+                <constraint firstItem="jwp-nT-cRB" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="5" id="rPN-kJ-2Sj"/>
+            </constraints>
+            <point key="canvasLocation" x="-103.5" y="129.5"/>
+        </customView>
+        <collectionViewItem nibName="FilesFileItem" nibBundleIdentifier="FilesFileItem" id="Ddl-bK-Xca" customClass="FilesFileItem" customModule="WebSites" customModuleProvider="target"/>
+    </objects>
+    <resources>
+        <image name="Green_Dot" width="600" height="600"/>
+        <image name="Image_06" width="225" height="225"/>
+    </resources>
+</document>

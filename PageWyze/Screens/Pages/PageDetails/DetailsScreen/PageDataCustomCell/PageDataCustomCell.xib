@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PageDataCustomCell" customModule="PageWyze" customModuleProvider="target"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="PageDataCustomCell" id="c22-O7-iKe" customClass="PageDataCustomCell" customModule="PageWyze" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XmV-nr-Gpy">
+                    <rect key="frame" x="8" y="48" width="464" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="I3t-jY-qAc">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="GDo-4h-5Th">
+                    <rect key="frame" x="10" y="10" width="460" height="28"/>
+                    <view key="contentView" id="6vK-jE-TuS">
+                        <rect key="frame" x="1" y="1" width="458" height="26"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dnQ-RY-t2c">
+                                <rect key="frame" x="3" y="5" width="452" height="16"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" focusRingType="none" id="E0w-a1-mvD">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dnQ-RY-t2c" firstAttribute="leading" secondItem="6vK-jE-TuS" secondAttribute="leading" constant="5" id="03f-dc-veV"/>
+                            <constraint firstAttribute="bottom" secondItem="dnQ-RY-t2c" secondAttribute="bottom" constant="5" id="Hu5-1P-STO"/>
+                            <constraint firstItem="dnQ-RY-t2c" firstAttribute="top" secondItem="6vK-jE-TuS" secondAttribute="top" constant="5" id="bIj-d9-8Hu"/>
+                            <constraint firstAttribute="trailing" secondItem="dnQ-RY-t2c" secondAttribute="trailing" constant="5" id="dNf-7R-nVS"/>
+                        </constraints>
+                    </view>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="XmV-nr-Gpy" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="10" id="LV4-Kh-5t7"/>
+                <constraint firstItem="GDo-4h-5Th" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="10" id="NkM-6I-gOK"/>
+                <constraint firstAttribute="trailing" secondItem="GDo-4h-5Th" secondAttribute="trailing" constant="10" id="Ssh-mf-5aY"/>
+                <constraint firstAttribute="bottom" secondItem="GDo-4h-5Th" secondAttribute="bottom" constant="10" id="fbO-v3-BND"/>
+                <constraint firstItem="GDo-4h-5Th" firstAttribute="top" secondItem="XmV-nr-Gpy" secondAttribute="bottom" constant="10" id="ljy-2j-xnR"/>
+                <constraint firstItem="XmV-nr-Gpy" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="10" id="qSC-M9-bPl"/>
+                <constraint firstAttribute="trailing" secondItem="XmV-nr-Gpy" secondAttribute="trailing" constant="10" id="zKW-d8-0Iw"/>
+            </constraints>
+            <accessibility identifier="PageDataCustomCell"/>
+            <connections>
+                <outlet property="titleLabel" destination="XmV-nr-Gpy" id="j66-14-Ahl"/>
+                <outlet property="valueTextField" destination="dnQ-RY-t2c" id="GTI-PH-X8U"/>
+            </connections>
+            <point key="canvasLocation" x="-101" y="121"/>
+        </customView>
+    </objects>
+</document>

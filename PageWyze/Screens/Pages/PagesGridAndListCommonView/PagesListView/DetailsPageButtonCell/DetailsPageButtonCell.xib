@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DetailsPageButtonCell" customModule="PageWyze" customModuleProvider="target"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="DetailsPageButtonCell" id="c22-O7-iKe" customClass="DetailsPageButtonCell" customModule="PageWyze" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lwg-C8-rXJ">
+                    <rect key="frame" x="20" y="18" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="VYh-GS-WX4"/>
+                        <constraint firstAttribute="width" secondItem="lwg-C8-rXJ" secondAttribute="height" multiplier="1:1" id="ar1-Ta-iYo"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSGoForwardTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="kUT-QN-fEV">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="detailsPageButtonTapped:" target="c22-O7-iKe" id="cpI-L1-ifl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="lwg-C8-rXJ" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="CmZ-fC-a1G"/>
+                <constraint firstItem="lwg-C8-rXJ" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="RAg-ga-nwD"/>
+            </constraints>
+            <accessibility identifier="DetailsPageButtonCell"/>
+            <point key="canvasLocation" x="-165.5" y="29.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSGoForwardTemplate" width="9" height="12"/>
+    </resources>
+</document>

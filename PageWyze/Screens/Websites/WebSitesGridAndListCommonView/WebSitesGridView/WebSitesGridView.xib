@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WebSitesGridView" customModule="PageWyze" customModuleProvider="target">
+            <connections>
+                <outlet property="noDataField" destination="Whm-xq-4Bv" id="ts5-Uk-Nuv"/>
+                <outlet property="parentCustomView" destination="c22-O7-iKe" id="iO2-Kc-IDw"/>
+                <outlet property="websitesGridCollectionView" destination="Bj5-FL-iV0" id="WfP-Vq-Ul4"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XE9-IY-VnH">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <clipView key="contentView" drawsBackground="NO" id="7vI-CB-wAX">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView selectable="YES" id="Bj5-FL-iV0">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <collectionViewGridLayout key="collectionViewLayout" id="T9J-fJ-bRo">
+                                    <size key="minimumItemSize" width="200" height="300"/>
+                                    <size key="maximumItemSize" width="200" height="300"/>
+                                </collectionViewGridLayout>
+                                <color key="primaryBackgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="YZ5-kD-5zz">
+                        <rect key="frame" x="-100" y="-100" width="233" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="WOT-as-zzc">
+                        <rect key="frame" x="234" y="1" width="15" height="143"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Whm-xq-4Bv">
+                    <rect key="frame" x="189" y="128" width="102" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="No data found..!" id="rvt-84-ygx">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Whm-xq-4Bv" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="FQB-7C-KTa"/>
+                <constraint firstAttribute="trailing" secondItem="XE9-IY-VnH" secondAttribute="trailing" id="LHo-aR-Syb"/>
+                <constraint firstItem="Whm-xq-4Bv" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="PkW-PG-3zp"/>
+                <constraint firstAttribute="bottom" secondItem="XE9-IY-VnH" secondAttribute="bottom" id="RVK-Kv-Kdl"/>
+                <constraint firstItem="XE9-IY-VnH" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="TDq-Ak-XOa"/>
+                <constraint firstItem="XE9-IY-VnH" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="hJz-QX-MCU"/>
+            </constraints>
+            <point key="canvasLocation" x="47" y="146"/>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WenoiVisualPanelView" customModule="WenoiUILib" customModuleProvider="target">
+            <connections>
+                <outlet property="customView" destination="c22-O7-iKe" id="FyG-oI-xL7"/>
+                <outlet property="searchBar" destination="jMI-fO-T7c" id="qWy-I9-6sI"/>
+                <outlet property="visualCollectionView" destination="UOv-Oh-edK" id="6Ho-vv-olM"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="332"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lDP-WN-4wA">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="332"/>
+                    <subviews>
+                        <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMI-fO-T7c">
+                            <rect key="frame" x="0.0" y="302" width="480" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="4jz-f4-Od9"/>
+                            </constraints>
+                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="sf4-mh-mhH">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </searchFieldCell>
+                            <connections>
+                                <action selector="searchFieldSelected:" target="-2" id="kcP-hf-fqX"/>
+                            </connections>
+                        </searchField>
+                        <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfV-K6-m2Q">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="302"/>
+                            <clipView key="contentView" id="yDH-t0-xpx">
+                                <rect key="frame" x="1" y="1" width="478" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <collectionView selectable="YES" allowsMultipleSelection="YES" id="UOv-Oh-edK">
+                                        <rect key="frame" x="0.0" y="0.0" width="478" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" id="y7J-UY-aNa">
+                                            <size key="itemSize" width="100" height="85"/>
+                                        </collectionViewFlowLayout>
+                                        <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </collectionView>
+                                </subviews>
+                            </clipView>
+                            <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="mtn-Vm-3yr">
+                                <rect key="frame" x="-100" y="-100" width="233" height="15"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                            <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="Lkp-wd-IJh">
+                                <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                        </scrollView>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="lDP-WN-4wA" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="GIC-Aq-2H8"/>
+                <constraint firstAttribute="bottom" secondItem="lDP-WN-4wA" secondAttribute="bottom" id="N70-Ph-4Zk"/>
+                <constraint firstAttribute="trailing" secondItem="lDP-WN-4wA" secondAttribute="trailing" id="SjR-aC-trX"/>
+                <constraint firstItem="lDP-WN-4wA" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="wZI-Qs-9rA"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="154"/>
+        </customView>
+    </objects>
+</document>

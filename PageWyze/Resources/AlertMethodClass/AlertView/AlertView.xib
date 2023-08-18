@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AlertView" customModule="PageWyze" customModuleProvider="target">
+            <connections>
+                <outlet property="customView" destination="c22-O7-iKe" id="IXq-JI-iaW"/>
+                <outlet property="lowAlphaView" destination="JHc-21-oDT" id="yaD-il-2Ru"/>
+                <outlet property="spinnerIndicator" destination="JKl-FD-nxs" id="dAZ-Wm-TpW"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="472" height="597"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="JHc-21-oDT" customClass="UIUserInteractionHandler" customModule="PageWyze" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="472" height="597"/>
+                </customView>
+                <progressIndicator maxValue="100" displayedWhenStopped="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="JKl-FD-nxs">
+                    <rect key="frame" x="228" y="291" width="16" height="16"/>
+                </progressIndicator>
+            </subviews>
+            <constraints>
+                <constraint firstItem="JHc-21-oDT" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="5gO-wh-Frv"/>
+                <constraint firstItem="JHc-21-oDT" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="iSw-4b-8Jb"/>
+                <constraint firstAttribute="trailing" secondItem="JHc-21-oDT" secondAttribute="trailing" id="rao-sq-ysV"/>
+                <constraint firstItem="JKl-FD-nxs" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="vDM-to-zFV"/>
+                <constraint firstItem="JKl-FD-nxs" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="wEV-ft-rzo"/>
+                <constraint firstAttribute="bottom" secondItem="JHc-21-oDT" secondAttribute="bottom" id="z3o-Zc-0ns"/>
+            </constraints>
+            <point key="canvasLocation" x="164" y="274.5"/>
+        </customView>
+    </objects>
+</document>

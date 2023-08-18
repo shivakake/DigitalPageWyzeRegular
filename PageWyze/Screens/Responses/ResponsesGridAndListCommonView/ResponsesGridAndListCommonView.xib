@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ResponsesGridAndListCommonView" customModule="PageWyze" customModuleProvider="target">
+            <connections>
+                <outlet property="dateLabel" destination="qZx-qi-gnt" id="92X-Wu-wIi"/>
+                <outlet property="dateView" destination="UIZ-Up-TCm" id="whc-3o-Ggq"/>
+                <outlet property="dateViewWidthConstraint" destination="RAd-Vs-Ih6" id="vVD-ZI-HPH"/>
+                <outlet property="gridListSegmentController" destination="ymz-hP-e1k" id="0k5-9p-bat"/>
+                <outlet property="parentCustomView" destination="c22-O7-iKe" id="ZgD-SX-ctO"/>
+                <outlet property="responsesGridListChangeView" destination="Cky-ud-fQV" id="TcD-Gg-54X"/>
+                <outlet property="statusCustomView" destination="vmV-ny-WsR" id="t7E-Qm-HDG"/>
+                <outlet property="statusImageView" destination="h3i-ac-Pjq" id="T4s-cd-23L"/>
+                <outlet property="statusTitleLabel" destination="2az-J5-PQs" id="OcZ-Bn-gZc"/>
+                <outlet property="userIntractionHandlerView" destination="OCj-pc-M9l" id="bLe-N4-lGm"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="654" height="452"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="OCj-pc-M9l" customClass="UIUserInteractionHandler" customModule="PageWyze" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="654" height="452"/>
+                    <subviews>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="vmV-ny-WsR">
+                            <rect key="frame" x="10" y="421" width="84" height="21"/>
+                            <subviews>
+                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h3i-ac-Pjq">
+                                    <rect key="frame" x="10" y="3" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="h3i-ac-Pjq" secondAttribute="height" multiplier="1:1" id="E6p-Kh-ISm"/>
+                                        <constraint firstAttribute="height" constant="15" id="sW6-t6-IUi"/>
+                                    </constraints>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSColorPanel" id="xB9-4H-xCa"/>
+                                </imageView>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2az-J5-PQs">
+                                    <rect key="frame" x="28" y="3" width="33" height="16"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" placeholderString="Live" id="Uh6-e8-7cI">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B6h-jG-dwK">
+                                    <rect key="frame" x="64" y="3" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="B6h-jG-dwK" secondAttribute="height" multiplier="1:1" id="CFN-mp-cas"/>
+                                        <constraint firstAttribute="height" constant="15" id="fPy-Mg-D4S"/>
+                                    </constraints>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSTouchBarGoDownTemplate" id="WmF-Le-to8"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="h3i-ac-Pjq" firstAttribute="leading" secondItem="vmV-ny-WsR" secondAttribute="leading" constant="10" id="1LQ-Vg-ZlR"/>
+                                <constraint firstItem="h3i-ac-Pjq" firstAttribute="top" secondItem="vmV-ny-WsR" secondAttribute="top" constant="3" id="BUe-3Y-5D0"/>
+                                <constraint firstItem="h3i-ac-Pjq" firstAttribute="centerY" secondItem="vmV-ny-WsR" secondAttribute="centerY" id="UED-CG-jwO"/>
+                                <constraint firstAttribute="trailing" secondItem="B6h-jG-dwK" secondAttribute="trailing" constant="5" id="Vad-hL-VTj"/>
+                                <constraint firstItem="B6h-jG-dwK" firstAttribute="centerY" secondItem="h3i-ac-Pjq" secondAttribute="centerY" id="Z5I-Ic-xi7"/>
+                                <constraint firstItem="2az-J5-PQs" firstAttribute="centerY" secondItem="h3i-ac-Pjq" secondAttribute="centerY" id="crz-8T-wdJ"/>
+                                <constraint firstItem="2az-J5-PQs" firstAttribute="leading" secondItem="h3i-ac-Pjq" secondAttribute="trailing" constant="5" id="eWI-5g-Qu8"/>
+                                <constraint firstItem="B6h-jG-dwK" firstAttribute="leading" secondItem="2az-J5-PQs" secondAttribute="trailing" constant="5" id="ogc-UE-7Jx"/>
+                            </constraints>
+                        </customView>
+                        <searchField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGf-zM-M5c">
+                            <rect key="frame" x="104" y="421" width="193" height="22"/>
+                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" focusRingType="none" usesSingleLineMode="YES" bezelStyle="round" id="47Z-qu-bCL">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </searchFieldCell>
+                        </searchField>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="UIZ-Up-TCm">
+                            <rect key="frame" x="307" y="421" width="100" height="22"/>
+                            <subviews>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qZx-qi-gnt">
+                                    <rect key="frame" x="34" y="3" width="33" height="16"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Date" id="QVY-jJ-fgD">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="qZx-qi-gnt" firstAttribute="centerY" secondItem="UIZ-Up-TCm" secondAttribute="centerY" id="G13-RI-9hJ"/>
+                                <constraint firstAttribute="width" constant="100" id="RAd-Vs-Ih6"/>
+                                <constraint firstItem="qZx-qi-gnt" firstAttribute="top" secondItem="UIZ-Up-TCm" secondAttribute="top" constant="3" id="dic-al-g2L"/>
+                                <constraint firstItem="qZx-qi-gnt" firstAttribute="centerX" secondItem="UIZ-Up-TCm" secondAttribute="centerX" id="ysq-GE-fc5"/>
+                            </constraints>
+                        </customView>
+                        <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ymz-hP-e1k">
+                            <rect key="frame" x="575" y="419" width="71" height="24"/>
+                            <segmentedCell key="cell" borderStyle="border" alignment="left" segmentDistribution="fillEqually" style="rounded" trackingMode="selectOne" id="rkP-4y-JMc">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment image="NSTouchBarIconViewTemplate" width="32"/>
+                                    <segment image="NSTouchBarListViewTemplate" width="32" selected="YES" tag="1"/>
+                                </segments>
+                            </segmentedCell>
+                            <connections>
+                                <action selector="fileGridListFileSegmentContollerTapped:" target="-2" id="nMm-zt-3mj"/>
+                            </connections>
+                        </segmentedControl>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="Cky-ud-fQV">
+                            <rect key="frame" x="10" y="10" width="634" height="401"/>
+                        </customView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="UIZ-Up-TCm" firstAttribute="centerY" secondItem="vmV-ny-WsR" secondAttribute="centerY" id="0KQ-PF-HYG"/>
+                        <constraint firstItem="ymz-hP-e1k" firstAttribute="centerY" secondItem="vmV-ny-WsR" secondAttribute="centerY" id="34l-v4-Y4E"/>
+                        <constraint firstItem="Cky-ud-fQV" firstAttribute="leading" secondItem="OCj-pc-M9l" secondAttribute="leading" constant="10" id="3Sv-7U-cEa"/>
+                        <constraint firstAttribute="trailing" secondItem="Cky-ud-fQV" secondAttribute="trailing" constant="10" id="3wE-0r-dJ7"/>
+                        <constraint firstItem="fGf-zM-M5c" firstAttribute="leading" secondItem="vmV-ny-WsR" secondAttribute="trailing" constant="10" id="GiM-Al-TDe"/>
+                        <constraint firstItem="UIZ-Up-TCm" firstAttribute="leading" secondItem="fGf-zM-M5c" secondAttribute="trailing" constant="10" id="Jyd-Ss-2Yr"/>
+                        <constraint firstItem="ymz-hP-e1k" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UIZ-Up-TCm" secondAttribute="trailing" constant="10" id="KSB-pq-9Y2"/>
+                        <constraint firstItem="vmV-ny-WsR" firstAttribute="top" secondItem="OCj-pc-M9l" secondAttribute="top" constant="10" id="OKL-sA-lAR"/>
+                        <constraint firstItem="Cky-ud-fQV" firstAttribute="top" secondItem="vmV-ny-WsR" secondAttribute="bottom" constant="10" id="VkJ-Rp-noY"/>
+                        <constraint firstAttribute="bottom" secondItem="Cky-ud-fQV" secondAttribute="bottom" constant="10" id="Zl3-FL-kjr"/>
+                        <constraint firstItem="vmV-ny-WsR" firstAttribute="leading" secondItem="OCj-pc-M9l" secondAttribute="leading" constant="10" id="gmo-cX-MOQ"/>
+                        <constraint firstAttribute="trailing" secondItem="ymz-hP-e1k" secondAttribute="trailing" constant="10" id="hnv-v3-DvV"/>
+                        <constraint firstItem="fGf-zM-M5c" firstAttribute="width" secondItem="OCj-pc-M9l" secondAttribute="width" multiplier="0.3" constant="-3.1999999999999886" id="weF-S3-uSz"/>
+                        <constraint firstItem="fGf-zM-M5c" firstAttribute="centerY" secondItem="vmV-ny-WsR" secondAttribute="centerY" id="zzm-mf-ad3"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OCj-pc-M9l" secondAttribute="bottom" id="8ZM-IZ-Zcf"/>
+                <constraint firstItem="OCj-pc-M9l" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="F0v-yx-gVC"/>
+                <constraint firstItem="OCj-pc-M9l" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="l9a-ww-h3h"/>
+                <constraint firstAttribute="trailing" secondItem="OCj-pc-M9l" secondAttribute="trailing" id="zyo-PT-ixv"/>
+            </constraints>
+            <point key="canvasLocation" x="12" y="115"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSColorPanel" width="32" height="32"/>
+        <image name="NSTouchBarGoDownTemplate" width="16" height="30"/>
+        <image name="NSTouchBarIconViewTemplate" width="20" height="30"/>
+        <image name="NSTouchBarListViewTemplate" width="18" height="30"/>
+    </resources>
+</document>

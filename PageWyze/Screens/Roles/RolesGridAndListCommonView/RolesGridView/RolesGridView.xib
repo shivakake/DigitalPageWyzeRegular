@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="RolesGridView" customModule="PageWyze" customModuleProvider="target">
+            <connections>
+                <outlet property="noDataField" destination="cJe-zR-rAu" id="BZj-xp-g51"/>
+                <outlet property="parentCustomView" destination="c22-O7-iKe" id="0oL-7u-fFq"/>
+                <outlet property="roleGridCollectionView" destination="sl1-94-KnO" id="7gq-E0-DmG"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcc-tx-cNY">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <clipView key="contentView" drawsBackground="NO" id="Kte-zD-DvL">
+                        <rect key="frame" x="1" y="1" width="478" height="270"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView selectable="YES" id="sl1-94-KnO">
+                                <rect key="frame" x="0.0" y="0.0" width="478" height="158"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <collectionViewGridLayout key="collectionViewLayout" id="f3R-5g-IYf">
+                                    <size key="minimumItemSize" width="200" height="300"/>
+                                    <size key="maximumItemSize" width="200" height="300"/>
+                                </collectionViewGridLayout>
+                                <color key="primaryBackgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="5zW-B0-ip3">
+                        <rect key="frame" x="1" y="144" width="233" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="0jY-4C-dut">
+                        <rect key="frame" x="234" y="1" width="15" height="143"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cJe-zR-rAu">
+                    <rect key="frame" x="189" y="128" width="102" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="No data found..!" id="B3C-3O-Mid">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fcc-tx-cNY" secondAttribute="trailing" id="5zA-zb-na0"/>
+                <constraint firstItem="cJe-zR-rAu" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="DzL-KF-gbF"/>
+                <constraint firstItem="fcc-tx-cNY" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="GGZ-Dz-469"/>
+                <constraint firstItem="cJe-zR-rAu" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="HFl-G1-FNA"/>
+                <constraint firstItem="fcc-tx-cNY" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="vtm-B0-gTP"/>
+                <constraint firstAttribute="bottom" secondItem="fcc-tx-cNY" secondAttribute="bottom" id="zQF-TB-Wqb"/>
+            </constraints>
+            <point key="canvasLocation" x="46" y="136"/>
+        </customView>
+    </objects>
+</document>

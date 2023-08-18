@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WebSiteGridItem" customModule="PageWyze" customModuleProvider="target">
+            <connections>
+                <outlet property="cellBackGroundView" destination="qcx-zY-Gn8" id="luo-e4-7Tm"/>
+                <outlet property="statusImageView" destination="hxP-c9-IJm" id="ymH-n2-hbd"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="websiteCreatedDateLabel" destination="ZJZ-FW-5rr" id="BIW-6r-wYG"/>
+                <outlet property="websiteDescriptionLabel" destination="ys8-ou-DMo" id="s75-Z1-5rC"/>
+                <outlet property="websiteLinkLabel" destination="JEG-tC-N4v" id="QQF-4S-4qm"/>
+                <outlet property="websiteLogoImageView" destination="Vxv-4Z-NAi" id="zme-Kb-ADx"/>
+                <outlet property="websiteNameLabel" destination="5h8-SX-9qh" id="dPR-Kx-8IB"/>
+                <outlet property="websiteProfileImageView" destination="vdl-Dv-dA5" id="5aa-VM-jmP"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="qcx-zY-Gn8">
+                    <rect key="frame" x="5" y="5" width="190" height="235"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vdl-Dv-dA5">
+                            <rect key="frame" x="45" y="125" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="6M2-nB-kNv"/>
+                                <constraint firstAttribute="width" constant="100" id="809-6C-cBY"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="defaultlogo" id="3o0-EW-45n"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5h8-SX-9qh">
+                            <rect key="frame" x="8" y="89" width="174" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="Lvt-Jk-6ig">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ys8-ou-DMo">
+                            <rect key="frame" x="8" y="63" width="174" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="kQn-nw-DLQ">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JEG-tC-N4v">
+                            <rect key="frame" x="8" y="37" width="174" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="U0H-Hj-JPJ">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZJZ-FW-5rr">
+                            <rect key="frame" x="30" y="13" width="122" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="AhH-QS-hgm">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hxP-c9-IJm">
+                            <rect key="frame" x="10" y="15" width="12" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="12" id="XX9-BV-XhW"/>
+                                <constraint firstAttribute="width" secondItem="hxP-c9-IJm" secondAttribute="height" id="dfb-tB-WtV"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="dLQ-as-Elh"/>
+                        </imageView>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vxv-4Z-NAi">
+                            <rect key="frame" x="160" y="11" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="4b5-dn-Ag9"/>
+                                <constraint firstAttribute="width" secondItem="Vxv-4Z-NAi" secondAttribute="height" multiplier="1:1" id="9bq-R5-MCX"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logo" id="pYl-2H-jDi"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ZJZ-FW-5rr" firstAttribute="leading" secondItem="hxP-c9-IJm" secondAttribute="trailing" constant="10" id="8DB-Qg-Cn8"/>
+                        <constraint firstItem="vdl-Dv-dA5" firstAttribute="centerX" secondItem="qcx-zY-Gn8" secondAttribute="centerX" id="9ht-w0-Nf6"/>
+                        <constraint firstItem="ys8-ou-DMo" firstAttribute="trailing" secondItem="5h8-SX-9qh" secondAttribute="trailing" id="AaQ-Mu-5eX"/>
+                        <constraint firstItem="hxP-c9-IJm" firstAttribute="leading" secondItem="qcx-zY-Gn8" secondAttribute="leading" constant="10" id="Es4-XM-SLB"/>
+                        <constraint firstItem="JEG-tC-N4v" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ys8-ou-DMo" secondAttribute="bottom" constant="10" id="LY6-Vd-Ycc"/>
+                        <constraint firstAttribute="bottom" secondItem="hxP-c9-IJm" secondAttribute="bottom" constant="15" id="OrN-PO-C7z"/>
+                        <constraint firstItem="ZJZ-FW-5rr" firstAttribute="centerY" secondItem="hxP-c9-IJm" secondAttribute="centerY" id="RE0-4X-Nzz"/>
+                        <constraint firstItem="hxP-c9-IJm" firstAttribute="top" secondItem="JEG-tC-N4v" secondAttribute="bottom" constant="10" id="XwO-hm-m0O"/>
+                        <constraint firstItem="Vxv-4Z-NAi" firstAttribute="centerY" secondItem="hxP-c9-IJm" secondAttribute="centerY" id="Z4S-Ax-8yk"/>
+                        <constraint firstItem="JEG-tC-N4v" firstAttribute="trailing" secondItem="ys8-ou-DMo" secondAttribute="trailing" id="ZvH-Fu-1ZP"/>
+                        <constraint firstItem="JEG-tC-N4v" firstAttribute="leading" secondItem="ys8-ou-DMo" secondAttribute="leading" id="fxA-JA-d3Z"/>
+                        <constraint firstItem="Vxv-4Z-NAi" firstAttribute="leading" secondItem="ZJZ-FW-5rr" secondAttribute="trailing" constant="10" id="gdq-UK-lRh"/>
+                        <constraint firstItem="vdl-Dv-dA5" firstAttribute="top" secondItem="qcx-zY-Gn8" secondAttribute="top" constant="10" id="hCA-No-se4"/>
+                        <constraint firstItem="5h8-SX-9qh" firstAttribute="top" secondItem="vdl-Dv-dA5" secondAttribute="bottom" constant="20" id="iba-2i-RiK"/>
+                        <constraint firstItem="ys8-ou-DMo" firstAttribute="leading" secondItem="5h8-SX-9qh" secondAttribute="leading" id="jGU-t5-VkF"/>
+                        <constraint firstAttribute="trailing" secondItem="5h8-SX-9qh" secondAttribute="trailing" constant="10" id="nFj-BT-6S8"/>
+                        <constraint firstItem="5h8-SX-9qh" firstAttribute="leading" secondItem="qcx-zY-Gn8" secondAttribute="leading" constant="10" id="oFk-PC-w3T"/>
+                        <constraint firstItem="ys8-ou-DMo" firstAttribute="top" secondItem="5h8-SX-9qh" secondAttribute="bottom" constant="10" id="qc6-gJ-mip"/>
+                        <constraint firstAttribute="trailing" secondItem="Vxv-4Z-NAi" secondAttribute="trailing" constant="10" id="yxn-vG-Wr0"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qcx-zY-Gn8" secondAttribute="trailing" constant="5" id="GjK-jG-qmr"/>
+                <constraint firstItem="qcx-zY-Gn8" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="5" id="Got-eE-0uk"/>
+                <constraint firstItem="qcx-zY-Gn8" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="5" id="gVB-hL-wMG"/>
+                <constraint firstAttribute="bottom" secondItem="qcx-zY-Gn8" secondAttribute="bottom" constant="5" id="xUH-Sr-K0H"/>
+            </constraints>
+            <point key="canvasLocation" x="54" y="253.5"/>
+        </customView>
+        <collectionViewItem nibName="WebSiteGridItem" nibBundleIdentifier="WebSiteGridItem" id="QqU-y2-F7I" customClass="WebSiteGridItem" customModule="PageWyze" customModuleProvider="target"/>
+    </objects>
+    <resources>
+        <image name="defaultlogo" width="192" height="192"/>
+        <image name="logo" width="192" height="192"/>
+    </resources>
+</document>

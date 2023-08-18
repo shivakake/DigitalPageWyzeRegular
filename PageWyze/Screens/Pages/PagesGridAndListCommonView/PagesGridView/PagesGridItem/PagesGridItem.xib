@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PagesGridItem" customModule="PageWyze" customModuleProvider="target">
+            <connections>
+                <outlet property="cellBackGroundView" destination="GhE-Yo-JBg" id="8UZ-GB-Yn1"/>
+                <outlet property="pageCreatedDateLabel" destination="0ha-mF-63n" id="sAj-HK-8Je"/>
+                <outlet property="pageDescriptionLabel" destination="sda-TF-ALd" id="sqE-ey-259"/>
+                <outlet property="pageLinkLabel" destination="4I9-Si-MUf" id="Mj6-Im-exJ"/>
+                <outlet property="pageLogoImageView" destination="LGF-Vp-xSO" id="T6c-u8-E7m"/>
+                <outlet property="pageMetaNameLabel" destination="kTn-3d-529" id="b6D-bv-XGc"/>
+                <outlet property="pageNameLabel" destination="WIz-if-7bl" id="qbd-Rr-6dV"/>
+                <outlet property="statusImageView" destination="laA-Pm-p7r" id="OLL-9x-PIR"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="182" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="GhE-Yo-JBg">
+                    <rect key="frame" x="5" y="5" width="172" height="138"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WIz-if-7bl">
+                            <rect key="frame" x="8" y="112" width="156" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="DZR-dw-8ap">
+                                <font key="font" usesAppearanceFont="YES"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kTn-3d-529">
+                            <rect key="frame" x="8" y="86" width="156" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="8sF-fP-4tk">
+                                <font key="font" usesAppearanceFont="YES"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sda-TF-ALd">
+                            <rect key="frame" x="8" y="60" width="156" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="V5P-kW-hR2">
+                                <font key="font" usesAppearanceFont="YES"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4I9-Si-MUf">
+                            <rect key="frame" x="8" y="34" width="156" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="doU-f6-IdH">
+                                <font key="font" usesAppearanceFont="YES"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0ha-mF-63n">
+                            <rect key="frame" x="30" y="8" width="104" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="wN7-lk-ZfW">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="laA-Pm-p7r">
+                            <rect key="frame" x="10" y="10" width="12" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="laA-Pm-p7r" secondAttribute="height" id="2Kv-v9-q6F"/>
+                                <constraint firstAttribute="height" constant="12" id="Jc9-Yd-J5y"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSColorPanel" id="ahq-oF-jMz"/>
+                        </imageView>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LGF-Vp-xSO">
+                            <rect key="frame" x="142" y="6" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="lhd-BD-VGK"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="16x16-Logo" id="kwi-63-xd1"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="sda-TF-ALd" firstAttribute="leading" secondItem="GhE-Yo-JBg" secondAttribute="leading" constant="10" id="14n-xi-7z8"/>
+                        <constraint firstItem="LGF-Vp-xSO" firstAttribute="centerY" secondItem="laA-Pm-p7r" secondAttribute="centerY" id="8mx-Yw-5iP"/>
+                        <constraint firstAttribute="trailing" secondItem="kTn-3d-529" secondAttribute="trailing" constant="10" id="ABz-2h-Fx8"/>
+                        <constraint firstAttribute="bottom" secondItem="laA-Pm-p7r" secondAttribute="bottom" constant="10" id="DXo-zN-D7s"/>
+                        <constraint firstItem="kTn-3d-529" firstAttribute="leading" secondItem="GhE-Yo-JBg" secondAttribute="leading" constant="10" id="FOO-8s-c19"/>
+                        <constraint firstItem="laA-Pm-p7r" firstAttribute="leading" secondItem="GhE-Yo-JBg" secondAttribute="leading" constant="10" id="Fdj-pW-nZ5"/>
+                        <constraint firstItem="0ha-mF-63n" firstAttribute="centerY" secondItem="laA-Pm-p7r" secondAttribute="centerY" id="JTl-r4-VGV"/>
+                        <constraint firstAttribute="trailing" secondItem="LGF-Vp-xSO" secondAttribute="trailing" constant="10" id="JpF-dV-QpU"/>
+                        <constraint firstAttribute="trailing" secondItem="4I9-Si-MUf" secondAttribute="trailing" constant="10" id="KXb-dU-vKP"/>
+                        <constraint firstAttribute="trailing" secondItem="sda-TF-ALd" secondAttribute="trailing" constant="10" id="PGT-5R-QfC"/>
+                        <constraint firstAttribute="trailing" secondItem="WIz-if-7bl" secondAttribute="trailing" constant="10" id="UAW-VO-s0G"/>
+                        <constraint firstItem="WIz-if-7bl" firstAttribute="leading" secondItem="GhE-Yo-JBg" secondAttribute="leading" constant="10" id="V0P-Rm-jOY"/>
+                        <constraint firstItem="4I9-Si-MUf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="sda-TF-ALd" secondAttribute="bottom" constant="10" id="c0M-B3-kuv"/>
+                        <constraint firstItem="0ha-mF-63n" firstAttribute="top" secondItem="4I9-Si-MUf" secondAttribute="bottom" constant="10" id="fV6-Bm-2CS"/>
+                        <constraint firstItem="sda-TF-ALd" firstAttribute="top" secondItem="kTn-3d-529" secondAttribute="bottom" constant="10" id="g3n-oZ-5oX"/>
+                        <constraint firstItem="0ha-mF-63n" firstAttribute="leading" secondItem="laA-Pm-p7r" secondAttribute="trailing" constant="10" id="hVI-t2-Ko4"/>
+                        <constraint firstItem="LGF-Vp-xSO" firstAttribute="width" secondItem="LGF-Vp-xSO" secondAttribute="height" multiplier="1:1" id="hsE-NW-IoP"/>
+                        <constraint firstItem="4I9-Si-MUf" firstAttribute="leading" secondItem="GhE-Yo-JBg" secondAttribute="leading" constant="10" id="ijZ-fF-fNd"/>
+                        <constraint firstItem="WIz-if-7bl" firstAttribute="top" secondItem="GhE-Yo-JBg" secondAttribute="top" constant="10" id="oTp-mk-zqL"/>
+                        <constraint firstItem="kTn-3d-529" firstAttribute="top" secondItem="WIz-if-7bl" secondAttribute="bottom" constant="10" id="qq6-BE-dPm"/>
+                        <constraint firstItem="LGF-Vp-xSO" firstAttribute="leading" secondItem="0ha-mF-63n" secondAttribute="trailing" constant="10" id="vbR-Nb-B0U"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="GhE-Yo-JBg" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="5" id="9lB-sU-Fd1"/>
+                <constraint firstAttribute="trailing" secondItem="GhE-Yo-JBg" secondAttribute="trailing" constant="5" id="AVz-0T-hSW"/>
+                <constraint firstAttribute="bottom" secondItem="GhE-Yo-JBg" secondAttribute="bottom" constant="5" id="cc1-Nb-UeD"/>
+                <constraint firstItem="GhE-Yo-JBg" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="5" id="nS7-Ah-c2I"/>
+            </constraints>
+            <point key="canvasLocation" x="-103" y="135"/>
+        </customView>
+        <collectionViewItem nibName="PagesGridItem" nibBundleIdentifier="PagesGridItem" id="Af9-Um-Cze" customClass="PagesGridItem" customModule="PageWyze" customModuleProvider="target"/>
+    </objects>
+    <resources>
+        <image name="16x16-Logo" width="16" height="16"/>
+        <image name="NSColorPanel" width="32" height="32"/>
+    </resources>
+</document>

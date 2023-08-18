@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="VisualPanelCell" customModule="WenoiUILib" customModuleProvider="target">
+            <connections>
+                <outlet property="backGroundView" destination="tqa-pp-CDh" id="AAX-ca-77g"/>
+                <outlet property="imageLogo" destination="AYW-Lb-XjK" id="vDA-bP-NDA"/>
+                <outlet property="statusImage" destination="yNu-JA-3bU" id="Tsg-lr-krs"/>
+                <outlet property="titleName" destination="X3d-9f-kCT" id="VHN-ms-w71"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="tqa-pp-CDh">
+                    <rect key="frame" x="5" y="4" width="90" height="78"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AYW-Lb-XjK">
+                            <rect key="frame" x="28" y="41" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="Bam-BO-3BM"/>
+                                <constraint firstAttribute="height" constant="35" id="g0C-GL-Gf1"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="country" id="dBN-Yp-Ov1"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="X3d-9f-kCT">
+                            <rect key="frame" x="3" y="5" width="84" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="v0R-ZQ-ucs"/>
+                            </constraints>
+                            <textFieldCell key="cell" alignment="center" title="Antigua and Barbuda" id="8jG-iI-ydn">
+                                <font key="font" metaFont="system" size="10"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yNu-JA-3bU">
+                            <rect key="frame" x="65" y="61" width="15" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="8sm-a6-phQ"/>
+                                <constraint firstAttribute="height" constant="15" id="pNF-cb-CRW"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusAvailable" id="VP9-O6-6VK"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="AYW-Lb-XjK" firstAttribute="top" secondItem="tqa-pp-CDh" secondAttribute="top" constant="2" id="A6v-Qp-Byw"/>
+                        <constraint firstItem="X3d-9f-kCT" firstAttribute="leading" secondItem="tqa-pp-CDh" secondAttribute="leading" constant="5" id="HPk-BQ-9D5"/>
+                        <constraint firstAttribute="trailing" secondItem="X3d-9f-kCT" secondAttribute="trailing" constant="5" id="Ll8-dB-ZIL"/>
+                        <constraint firstItem="yNu-JA-3bU" firstAttribute="top" secondItem="AYW-Lb-XjK" secondAttribute="top" id="NWN-Ef-lsA"/>
+                        <constraint firstAttribute="bottom" secondItem="X3d-9f-kCT" secondAttribute="bottom" constant="5" id="V4s-Q9-7df"/>
+                        <constraint firstItem="X3d-9f-kCT" firstAttribute="top" secondItem="AYW-Lb-XjK" secondAttribute="bottom" constant="10" id="eis-MU-je1"/>
+                        <constraint firstItem="X3d-9f-kCT" firstAttribute="centerX" secondItem="AYW-Lb-XjK" secondAttribute="centerX" id="jQi-QS-eMD"/>
+                        <constraint firstItem="yNu-JA-3bU" firstAttribute="leading" secondItem="AYW-Lb-XjK" secondAttribute="trailing" constant="2" id="p8j-0n-XOW"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="tqa-pp-CDh" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="7NJ-gR-s5n"/>
+                <constraint firstItem="tqa-pp-CDh" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="w68-1p-Mhx"/>
+            </constraints>
+            <point key="canvasLocation" x="-87" y="84.5"/>
+        </customView>
+        <collectionViewItem nibName="VisualPanelCell" nibBundleIdentifier="VisualPanelCell" id="7dA-18-wy2" customClass="VisualPanelCell" customModule="WenoiUILib" customModuleProvider="target"/>
+    </objects>
+    <resources>
+        <image name="NSStatusAvailable" width="16" height="16"/>
+        <image name="country" width="192" height="192"/>
+    </resources>
+</document>
